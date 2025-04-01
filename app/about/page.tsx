@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { NavLinks } from "../components/navBar";
 
-const page = () => {
+export default function About() {
   return (
     <div className="w-full h-full max-h-full px-5 flex flex-col items-center">
       <div className="w-full py-12 flex items-center flex-col gap-2">
@@ -19,10 +19,12 @@ const page = () => {
         </div>
         <h1
           className="text-base text-muted-foreground font-medium flex items-center gap-1"
-          translate="no">
+          translate="no"
+        >
           <Link
             href={"https://github.com/Dex-code61"}
-            className="flex items-center gap-1 cursor-pointer select-none hover:text-foreground transition-all delay-150">
+            className="flex items-center gap-1 cursor-pointer select-none hover:text-foreground transition-all delay-150"
+          >
             <span>Dex-code61</span>
             <ArrowUpRight size={24} />
           </Link>
@@ -37,7 +39,8 @@ const page = () => {
           Hi, I&apos;m{" "}
           <Link
             href="https://www.github.com/Dex-code61/colors-generator-app"
-            className="text-foreground hover:text-primary delay-150">
+            className="text-foreground hover:text-primary delay-150"
+          >
             Deodat aka Dex-code61
           </Link>{" "}
           , the creator of Colors Generator. I&apos;m a passionate web developer
@@ -53,20 +56,23 @@ const page = () => {
           Colors Generator is built using{" "}
           <Link
             className="text-foreground hover:text-primary delay-150"
-            href="https://www.nextjs.org">
+            href="https://www.nextjs.org"
+          >
             Next.js
           </Link>
           ,a React-based framework that allows for fast and dynamic web
           development. The color palette generation is done using{" "}
           <Link
             className="text-foreground hover:text-primary delay-150"
-            href="https://github.com/cheatsnake/xColors-api">
+            href="https://github.com/cheatsnake/xColors-api"
+          >
             xColors-api
           </Link>{" "}
           i have view on{" "}
           <Link
             className="text-foreground hover:text-primary delay-150"
-            href="https://www.github.com/Dex-code61">
+            href="https://www.github.com/Dex-code61"
+          >
             Github
           </Link>{" "}
           that ensures you get visually appealing color combinations every time.
@@ -75,6 +81,4 @@ const page = () => {
       <NavLinks />
     </div>
   );
-};
-
-export default page;
+}

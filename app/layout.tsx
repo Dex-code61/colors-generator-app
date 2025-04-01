@@ -27,7 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} dark relative max-h-screen flex-col antialiased flex items-center justify-center w-full h-screen`}>
+        className={`${geistSans.variable} ${geistMono.variable} dark relative max-h-screen flex-col antialiased flex items-center justify-center w-full h-screen`}
+      >
         <NavBar />
         <div className="w-full h-full">{children}</div>
         <div className="w-full z-50 text-foreground text-sm font-light py-1 px-3 text-center">
@@ -35,7 +36,8 @@ export default function RootLayout({
           <Link
             className="font-medium"
             target="_blank"
-            href="https://github.com/Dex-code61/colors-generator-app">
+            href="https://github.com/Dex-code61/colors-generator-app"
+          >
             Dex-code61
           </Link>
         </div>

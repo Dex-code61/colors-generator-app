@@ -26,17 +26,20 @@ export const NavLinks = () => {
     <div className="flex items-center gap-1">
       <Link
         href="/"
-        className="text-base text-muted-foreground hover:text-foreground transition-colors">
+        className="text-base text-muted-foreground hover:text-foreground transition-colors"
+      >
         Home /
       </Link>
       <Link
         href="/about"
-        className="text-base text-muted-foreground hover:text-foreground transition-colors">
+        className="text-base text-muted-foreground hover:text-foreground transition-colors"
+      >
         About /
       </Link>
       <Link
         href="https://www.github.com/Dex-code61"
-        className="text-base text-muted-foreground  hover:text-foreground transition-colors">
+        className="text-base text-muted-foreground  hover:text-foreground transition-colors"
+      >
         Github
       </Link>
     </div>
